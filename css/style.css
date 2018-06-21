@@ -1,3 +1,27 @@
+@font-face {
+ 	font-family: "Roboto";
+ 	src: url('../fonts/roboto.woff') format("woff"),
+		url('../fonts/roboto.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+ 	font-family: "Roboto";
+ 	src: url('../fonts/robotobold.woff') format("woff"),
+		url('../fonts/robotobold.woff2') format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+ 	font-family: "Roboto";
+ 	src: url('../fonts/robotomedium.woff') format("woff"),
+		url('../fonts/robotomedium.woff2') format("woff2");
+    font-weight: medium;
+    font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -36,6 +60,7 @@
 	width: 154px;
 	height: 64px;
 	margin-left: 27px;
+	margin-top: 9px;
 }
 
 .logo img {
@@ -46,7 +71,8 @@
 .nav-menu {
 	margin: 0;
 	padding: 0;
-	margin-left: 22px;
+	margin-left: 11px;
+	margin-top: 23px;
 	float: left;
 	list-style: none;
 }
@@ -55,24 +81,48 @@
 	float: left;
 }
 
+.nav-menu li a {
+	text-decoration: underline;
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 9px 14px;
+}
+
+.nav-menu li a:hover {
+	padding: 8px 13px;
+	border: 1px solid #ffffff;
+	border-radius: 17px;
+	background-color: #ffffff;
+	color: #333333;
+	text-decoration: none;
+}
+
 .nav-buttons {
 	float: right;
 	width: 100%;
 }
 
-.nav-buttons input {
+/*.nav-buttons input {
 	float: right;
 	width: 32px;
-}
+}*/
 
 .nav-buttons a {
 	float: right;
 	color: #ffffff;
+	margin-left: 10px;
+}
+
+.nav-buttons a:first-child {
+	margin-right: 27px;
 }
 
 .header-contacts {
 	float: right;
 	text-align: right;
+	margin-right: 27px;
 }
 
 .header-contacts p {
